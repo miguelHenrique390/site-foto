@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selfie Filters</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="background-blur"></div>
+
+  <div class="container">
+
+    <h1>📸 Selfie Magic</h1>
+
+    <p class="subtitle">
+      Tire selfies incríveis com filtros super divertidos ✨
+    </p>
+
+    <div class="camera-box">
+
+      <div class="camera-top">
+        <span class="live-dot"></span>
+        <p>Camera Online</p>
+      </div>
+
+      <video id="camera" autoplay></video>
+
+    </div>
+
+    <div class="botoes">
+
+      <button class="btn normal" onclick="capturarPhoto('normal')">
+        📷 Tirar Foto
+      </button>
+
+      <button class="btn cinza" onclick="capturarPhoto('cinza')">
+        ⚫ Cinza
+      </button>
+
+      <button class="btn antiga" onclick="capturarPhoto('antiga')">
+        🟤 Vintage
+      </button>
+
+      <button class="btn desfoque" onclick="capturarPhoto('desfoque')">
+        🌫️ Blur
+      </button>
+
+      <button class="btn brilho" onclick="capturarPhoto('brilho')">
+        ✨ Brilho
+      </button>
+
+      <button class="btn saturacao" onclick="capturarPhoto('saturacao')">
+        🌈 Saturação
+      </button>
+
+      <button class="btn opacidade" onclick="capturarPhoto('opacidade')">
+        👻 Opacidade
+      </button>
+
+      <button class="btn inverter" onclick="capturarPhoto('inverter')">
+        🔄 Inverter
+      </button>
+
+    </div>
+
+  </div>
+
+  <section class="galeria">
+
+    <h2>🖼️ Suas Fotos</h2>
+
+    <div id="photos" class="photos"></div>
+
+  </section>
+
+</body>
+
+<script src="index.js"></script>
+</html>
